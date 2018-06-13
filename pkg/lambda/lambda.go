@@ -6,7 +6,7 @@ import (
 	"reflect"
 
 	"github.com/antlr/antlr4/runtime/Go/antlr"
-	grammar "github.com/caibirdme/yql/internal/lambda"
+	grammar "github.com/sniperkit/yql/pkg/internal/lambda"
 )
 
 type bailLexer struct {

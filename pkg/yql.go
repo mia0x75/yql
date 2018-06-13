@@ -4,9 +4,12 @@ import (
 	"fmt"
 	"strconv"
 
+	// external
 	"github.com/antlr/antlr4/runtime/Go/antlr"
-	"github.com/caibirdme/yql/internal/grammar"
-	"github.com/caibirdme/yql/internal/stack"
+
+	// internal
+	grammar "github.com/sniperkit/yql/pkg/internal/grammar"
+	stack "github.com/sniperkit/yql/pkg/internal/stack"
 )
 
 type boolStack interface {
