@@ -197,6 +197,16 @@ func compare(actualValue interface{}, expectValue []string, op string) bool {
 			return false
 		}
 		return cmpInt(actual, expect, op)
+	case json.Number:
+		actualValue, err := strconv.ParseInt(actualValue.(json.Number).String(), 10, 64)
+		if nil != err {
+			return false
+		}
+		expect, err := strconv.ParseInt(e, 10, 64)
+		if nil != err {
+			return false
+		}
+		return cmpInt(actualValue, expect, op)
 	case float64:
 		expect, err := strconv.ParseFloat(e, 64)
 		if nil != err {
