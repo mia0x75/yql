@@ -2,7 +2,7 @@
 
 package grammar // Yql
 import (
-	"github.com/antlr/antlr4/runtime/Go/antlr"
+	"github.com/mia0x75/antlr"
 )
 
 // BaseYqlListener is a complete listener for a parse tree produced by YqlParser.

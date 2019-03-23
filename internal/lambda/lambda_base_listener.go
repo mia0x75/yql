@@ -1,7 +1,7 @@
 // Generated from Lambda.g4 by ANTLR 4.7.
 
 package lambda // Lambda
-import "github.com/antlr/antlr4/runtime/Go/antlr"
+import "github.com/mia0x75/antlr"
 
 // BaseLambdaListener is a complete listener for a parse tree produced by LambdaParser.
 type BaseLambdaListener struct{}

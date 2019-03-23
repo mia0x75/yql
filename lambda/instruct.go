@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	grammar "github.com/sniperkit/yql/pkg/internal/lambda"
+	grammar "github.com/mia0x75/yql/internal/lambda"
 )
 
 type action uint8

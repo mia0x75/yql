@@ -1,15 +1,15 @@
 package yql
 
 import (
+	"encoding/json"
 	"fmt"
 	"strconv"
 
 	// external
-	"github.com/antlr/antlr4/runtime/Go/antlr"
+	"github.com/mia0x75/antlr"
 
-	// internal
-	grammar "github.com/sniperkit/yql/pkg/internal/grammar"
-	stack "github.com/sniperkit/yql/pkg/internal/stack"
+	"github.com/mia0x75/yql/internal/grammar"
+	"github.com/mia0x75/yql/internal/stack"
 )
 
 type boolStack interface {

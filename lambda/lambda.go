@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/antlr/antlr4/runtime/Go/antlr"
-	grammar "github.com/sniperkit/yql/pkg/internal/lambda"
+	"github.com/mia0x75/antlr/"
+	grammar "github.com/mia0x75/yql/internal/lambda"
 )
 
 type bailLexer struct {
