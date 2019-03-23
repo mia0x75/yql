@@ -1,12 +1,12 @@
 ### YQL(Yet another-Query-Language)
-[![Build Status](https://www.travis-ci.org/caibirdme/yql.svg?branch=master)](https://www.travis-ci.org/caibirdme/yql)
-[![GoDoc](https://godoc.org/github.com/caibirdme/yql?status.svg)](https://godoc.org/github.com/caibirdme/yql)
+[![Build Status](https://www.travis-ci.org/mia0x75/yql.svg?branch=master)](https://www.travis-ci.org/mia0x75/yql)
+[![GoDoc](https://godoc.org/github.com/mia0x75/yql?status.svg)](https://godoc.org/github.com/mia0x75/yql)
 
 
 YQL is very similar with the `where` part of sql. You can see it as another sql which also support comparison between two sets. YQL have little concepts thus you can use it well short after reading the examples.Though it's designed for rule engine, it can be widely used in your code logic.
 
 ### Install
-`go get github.com/caibirdme/yql`
+`go get github.com/mia0x75/yql`
 
 ### Exmaple
 See more examples in the `yql_test.go` and godoc.
