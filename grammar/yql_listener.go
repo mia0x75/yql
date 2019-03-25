@@ -1,9 +1,7 @@
-// Generated from Yql.g4 by ANTLR 4.7.
+// Code generated from Yql.g4 by ANTLR 4.7.2. DO NOT EDIT.
 
 package grammar // Yql
-import (
-	"github.com/mia0x75/antlr"
-)
+import "github.com/mia0x75/antlr"
 
 // YqlListener is a complete listener for a parse tree produced by YqlParser.
 type YqlListener interface {
@@ -27,8 +25,8 @@ type YqlListener interface {
 	// EnterBooleanExpr is called when entering the booleanExpr production.
 	EnterBooleanExpr(c *BooleanExprContext)
 
-	// EnterLeftexpr is called when entering the leftexpr production.
-	EnterLeftexpr(c *LeftexprContext)
+	// EnterLeftExpr is called when entering the leftExpr production.
+	EnterLeftExpr(c *LeftExprContext)
 
 	// EnterValue is called when entering the value production.
 	EnterValue(c *ValueContext)
@@ -51,8 +49,8 @@ type YqlListener interface {
 	// ExitBooleanExpr is called when exiting the booleanExpr production.
 	ExitBooleanExpr(c *BooleanExprContext)
 
-	// ExitLeftexpr is called when exiting the leftexpr production.
-	ExitLeftexpr(c *LeftexprContext)
+	// ExitLeftExpr is called when exiting the leftExpr production.
+	ExitLeftExpr(c *LeftExprContext)
 
 	// ExitValue is called when exiting the value production.
 	ExitValue(c *ValueContext)

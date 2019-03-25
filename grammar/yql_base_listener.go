@@ -1,9 +1,7 @@
-// Generated from Yql.g4 by ANTLR 4.7.
+// Code generated from Yql.g4 by ANTLR 4.7.2. DO NOT EDIT.
 
 package grammar // Yql
-import (
-	"github.com/mia0x75/antlr"
-)
+import "github.com/mia0x75/antlr"
 
 // BaseYqlListener is a complete listener for a parse tree produced by YqlParser.
 type BaseYqlListener struct{}
@@ -58,11 +56,11 @@ func (s *BaseYqlListener) EnterBooleanExpr(ctx *BooleanExprContext) {}
 // ExitBooleanExpr is called when production booleanExpr is exited.
 func (s *BaseYqlListener) ExitBooleanExpr(ctx *BooleanExprContext) {}
 
-// EnterLeftexpr is called when production leftexpr is entered.
-func (s *BaseYqlListener) EnterLeftexpr(ctx *LeftexprContext) {}
+// EnterLeftExpr is called when production leftExpr is entered.
+func (s *BaseYqlListener) EnterLeftExpr(ctx *LeftExprContext) {}
 
-// ExitLeftexpr is called when production leftexpr is exited.
-func (s *BaseYqlListener) ExitLeftexpr(ctx *LeftexprContext) {}
+// ExitLeftExpr is called when production leftExpr is exited.
+func (s *BaseYqlListener) ExitLeftExpr(ctx *LeftExprContext) {}
 
 // EnterValue is called when production value is entered.
 func (s *BaseYqlListener) EnterValue(ctx *ValueContext) {}

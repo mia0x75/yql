@@ -8,8 +8,8 @@ import (
 	// external
 	"github.com/mia0x75/antlr"
 
-	"github.com/mia0x75/yql/internal/grammar"
-	"github.com/mia0x75/yql/internal/stack"
+	"github.com/mia0x75/yql/grammar"
+	"github.com/mia0x75/yql/stack"
 )
 
 type boolStack interface {
@@ -52,7 +52,7 @@ func (l *yqlListener) ExitBooleanExpr(ctx *grammar.BooleanExprContext) {
 	l.stack.Push(res)
 }
 
-func (l *yqlListener) ExitLeftexpr(ctx *grammar.LeftexprContext) {
+func (l *yqlListener) ExitLeftExpr(ctx *grammar.LeftExprContext) {
 	l.fieldName = ctx.FIELDNAME().GetText()
 	funcs := ctx.AllFUNC()
 	l.funcs = l.funcs[:0]

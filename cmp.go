@@ -7,16 +7,17 @@ import (
 )
 
 const (
-	opEqual       = "="
-	opNotEqual    = "!="
-	opLarger      = ">"
-	opLargerEqual = ">="
-	opLess        = "<"
-	opLessEqual   = "<="
-	opInter       = "∩"
-	opNotInter    = "!∩"
-	opIn          = "in"
-	opNotIn       = "!in"
+	opEqual           = "="
+	opNotEqual        = "!="
+	opNotEqualSynonym = "<>"
+	opLarger          = ">"
+	opLargerEqual     = ">="
+	opLess            = "<"
+	opLessEqual       = "<="
+	opInter           = "∩"
+	opNotInter        = "!∩"
+	opIn              = "in"
+	opNotIn           = "!in"
 )
 
 const (
@@ -27,7 +28,7 @@ func cmpInt(actual, expect int64, op string) bool {
 	switch op {
 	case opEqual:
 		return actual == expect
-	case opNotEqual:
+	case opNotEqual, opNotEqualSynonym:
 		return actual != expect
 	case opLarger:
 		return actual > expect
@@ -46,7 +47,7 @@ func cmpFloat(actual, expect float64, op string) bool {
 	switch op {
 	case opEqual:
 		return floatEqual(actual, expect)
-	case opNotEqual:
+	case opNotEqual, opNotEqualSynonym:
 		return !floatEqual(actual, expect)
 	case opLarger:
 		return actual > expect
@@ -65,7 +66,7 @@ func cmpStr(actual, expect string, op string) bool {
 	switch op {
 	case opEqual:
 		return actual == expect
-	case opNotEqual:
+	case opNotEqual, opNotEqualSynonym:
 		return actual != expect
 	case opLarger:
 		return actual > expect
@@ -84,7 +85,7 @@ func cmpBool(actual, expect bool, op string) bool {
 	switch op {
 	case opEqual:
 		return actual == expect
-	case opNotEqual:
+	case opNotEqual, opNotEqualSynonym:
 		return actual != expect
 	default:
 		return false
@@ -93,7 +94,7 @@ func cmpBool(actual, expect bool, op string) bool {
 
 func compareSet(actual interface{}, expect []string, op string) bool {
 	switch op {
-	case opEqual, opNotEqual, opInter, opNotInter, opIn, opNotIn:
+	case opEqual, opNotEqual, opNotEqualSynonym, opInter, opNotInter, opIn, opNotIn:
 	default:
 		return false
 	}
